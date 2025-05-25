@@ -1,6 +1,18 @@
+/**
+ * Clase que presenta los resultados de la busqueda y
+ * y las metricas de rendimiento del algoritmo
+ */
 public class ResultPresenter {
-
-    //Metodo para condicionar y mostrar los resultados
+    /**
+     * Metodo para condicionar y mostrar los resultados de la búsqueda.
+     *
+     * @param oracle El objeto que contiene el mensaje secreto.
+     * @param found Indica si el número fue encontrado en el arreglo.
+     * @param userGuess El número que el usuario adivinó.
+     * @param magicNumber El número mágico que se busca.
+     * @param sortTime El tiempo que tomó ordenar el arreglo, en nanosegundos.
+     * @param searchTime El tiempo que tomó realizar la búsqueda, en nanosegundos.
+     */
     public static void showResults(OracleMessage oracle, boolean found,
                                    int userGuess, int magicNumber,
                                    long sortTime, long searchTime) {

@@ -1,16 +1,20 @@
-import java.lang.reflect.Array;
 import java.util.Random;
 
+/**
+ * Clase encargada de seleccionar un numero magico de un arreglo
+ * y revela un mensaje secreto si se adivina correctamente.
+ */
 public class OracleMessage {
-    //Esta clase se encarga de escoger el numero magico y mostrar el mensaje si se encuentra
-
     private int magicNumber;
+
+    //Conjunto de mensajes secretos que se pueden revelar
     private final String[] secretMessages = {
             "✨ El portal al reino sumergido se abrirá cuando el sol cruce la cima del monte hueco.",
             "📜 Bajo la tercera luna de piedra, encontrarás la biblioteca olvidada del conocimiento prohibido.",
             "🗺️ El mapa del tesoro está oculto en la última página del códice rojo, sellado por el sabio Alerion."
     };
-    //Escoge un numero aleatorio del array como el numero magico
+
+    //Selecciona aleatoriamente un numero del arreglo y lo asigna como numero magico.
     public void selectMagicNumber(int[] array) {
         Random rand = new Random();
         this.magicNumber = array[rand.nextInt(array.length)]; // Solo lectura

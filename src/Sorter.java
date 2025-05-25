@@ -1,6 +1,13 @@
+/**
+ * Clase que implementa el algoritmo de ordenamiento Merge Sort
+ */
 public class Sorter {
 
-    // Metodo público que inicia el ordenamiento Merge Sort
+    /**
+     * Metodo publico que inicia el ordenamiento Merge Sort
+     * @param array El arreglo que se desea ordenar
+     */
+
     public void mergeSort(int[] array) {
         // Si el arreglo es nulo o tiene menos de 2 elementos, no hay nada que ordenar
         if (array == null || array.length < 2) {
@@ -10,7 +17,13 @@ public class Sorter {
         mergeSortRecursive(array, 0, array.length - 1);
     }
 
-    // Metodo recursivo para dividir el arreglo y aplicar Merge Sort
+    /**
+     * Metodo recursivo para dividir el arreglo y aplicar Merge Sort.
+     *
+     * @param array El arreglo que se desea ordenar.
+     * @param left El índice inicial de la parte del arreglo a ordenar.
+     * @param right El índice final de la parte del arreglo a ordenar.
+     */
     private void mergeSortRecursive(int[] array, int left, int right) {
         // Si la mitad izquierda es menor que la derecha, significa que hay más de un elemento
         if (left < right) {
@@ -27,8 +40,15 @@ public class Sorter {
         }
     }
 
-    // Metodo que une (fusiona) dos mitades ordenadas en un solo arreglo ordenado
-    private void merge(int[] array, int left, int mid, int right) {
+    /**
+     * Metodo que une (fusiona) dos mitades ordenadas en un solo arreglo ordenado.
+     *
+     * @param array El arreglo original que contiene las mitades a fusionar.
+     * @param left El índice inicial de la primera mitad.
+     * @param mid El índice final de la primera mitad (punto medio).
+     * @param right El índice final de la segunda mitad.
+     */
+     private void merge(int[] array, int left, int mid, int right) {
         // Calcula los tamaños de los sub-arreglos temporales
         int n1 = mid - left + 1;
         int n2 = right - mid;
