@@ -12,13 +12,21 @@ Este proyecto es un juego interactivo desarrollado en Java que combina algoritmo
 ## 📁 Estructura del Proyecto
 src
 ├── GameEngine.java           // Lógica principal del juego y menú
+
 ├── MainApp.java              // Clase con el método main
+
 ├── InputValidator.java       // Valida entradas del usuario
+
 ├── NumberGenerator.java      // Genera números aleatorios
+
 ├── OracleMessage.java        // Selecciona el número mágico y mensaje
+
 ├── ResultPresenter.java      // Muestra los resultados
+
 ├── Searcher.java             // Implementa búsqueda binaria
+
 ├── Sorter.java               // Implementa Merge Sort
+
 └── Timer.java                // Mide tiempos de ejecución
 
 ## ▶️ Instrucciones para Ejecutar
