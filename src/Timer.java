@@ -1,5 +1,5 @@
 /**
- * Clase Timer para meedir el tiempo de ejecucion de procesos
+ * Clase Timer para medir el tiempo de ejecucion de procesos
  */
 public class Timer {
 

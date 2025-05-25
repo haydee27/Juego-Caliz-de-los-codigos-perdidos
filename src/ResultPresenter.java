@@ -1,6 +1,6 @@
 /**
  * Clase que presenta los resultados de la busqueda y
- * y las metricas de rendimiento del algoritmo
+ * las metricas de rendimiento del algoritmo
  */
 public class ResultPresenter {
     /**
