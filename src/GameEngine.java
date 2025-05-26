@@ -76,7 +76,8 @@ public class GameEngine {
         oracle.selectMagicNumber(numbers); //Seleccion del numero magico oculto
         int magicNumber = oracle.getMagicNumber();
 
-        System.out.println("🔑 Número mágico seleccionado (oculto al usuario): " + magicNumber);
+        //Linea para efecto de prueba
+        //System.out.println("🔑 Número mágico seleccionado (oculto al usuario): " + magicNumber);
 
         boolean guessedCorrectly = false;
         int attempts = 0;
